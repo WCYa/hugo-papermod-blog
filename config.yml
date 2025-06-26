@@ -41,8 +41,8 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+        - name: GitHub
+          url: https://github.com/WCYa/hugo-papermod-blog/
   en:
     languageName: "English"
     weight: 1
