@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://WCYa.github.io/sitemap.xml
