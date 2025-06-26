@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://WCYa.github.io/sitemap.xml
+Sitemap: https://wcya.github.io/hugo-papermod-blog/sitemap.xml

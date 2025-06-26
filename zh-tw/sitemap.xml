@@ -2,59 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://WCYa.github.io/posts/hello-world/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/hello-world/</loc>
     <lastmod>2025-06-26T15:59:10+08:00</lastmod>
   </url><url>
-    <loc>https://WCYa.github.io/posts/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/</loc>
     <lastmod>2025-06-26T15:59:10+08:00</lastmod>
   </url><url>
-    <loc>https://WCYa.github.io/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/</loc>
     <lastmod>2025-06-26T15:59:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://WCYa.github.io/en/"
+                href="https://wcya.github.io/hugo-papermod-blog/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
-                href="https://WCYa.github.io/"
+                href="https://wcya.github.io/hugo-papermod-blog/"
                 />
   </url><url>
-    <loc>https://WCYa.github.io/categories/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://WCYa.github.io/en/categories/"
+                href="https://wcya.github.io/hugo-papermod-blog/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
-                href="https://WCYa.github.io/categories/"
+                href="https://wcya.github.io/hugo-papermod-blog/categories/"
                 />
   </url><url>
-    <loc>https://WCYa.github.io/series/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://WCYa.github.io/en/series/"
+                href="https://wcya.github.io/hugo-papermod-blog/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
-                href="https://WCYa.github.io/series/"
+                href="https://wcya.github.io/hugo-papermod-blog/series/"
                 />
   </url><url>
-    <loc>https://WCYa.github.io/tags/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://WCYa.github.io/en/tags/"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
-                href="https://WCYa.github.io/tags/"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/"
                 />
   </url>
 </urlset>
