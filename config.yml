@@ -102,7 +102,7 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  # comments: false
+  comments: true
   images: ["images/papermod-cover.png"]
 
   # profileMode:
@@ -209,3 +209,5 @@ services:
     disableInlineCSS: true
   x:
     disableInlineCSS: true
+  disqus:
+    shortname: wcyas-blog
