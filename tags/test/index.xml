@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on WCYa&#39;s Blog</title>
-    <link>https://wcya.github.io/hugo-papermod-blog/tags/</link>
-    <description>Recent content in Tags on WCYa&#39;s Blog</description>
+    <title>Test on WCYa&#39;s Blog</title>
+    <link>https://wcya.github.io/hugo-papermod-blog/tags/test/</link>
+    <description>Recent content in Test on WCYa&#39;s Blog</description>
     <image>
       <title>WCYa&#39;s Blog</title>
       <url>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</url>
@@ -13,13 +13,13 @@
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
     <lastBuildDate>Thu, 26 Jun 2025 15:59:10 +0800</lastBuildDate>
-    <atom:link href="https://wcya.github.io/hugo-papermod-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wcya.github.io/hugo-papermod-blog/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://wcya.github.io/hugo-papermod-blog/tags/test/</link>
+      <title>︊️︊︎️️️☄️ Hello World</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/posts/hello-world/</link>
       <pubDate>Thu, 26 Jun 2025 15:59:10 +0800</pubDate>
-      <guid>https://wcya.github.io/hugo-papermod-blog/tags/test/</guid>
-      <description></description>
+      <guid>https://wcya.github.io/hugo-papermod-blog/posts/hello-world/</guid>
+      <description>&lt;p&gt;這是我的第一篇 Hugo + PaperMod 的文章 🎉&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
