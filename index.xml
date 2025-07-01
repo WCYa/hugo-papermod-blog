@@ -12,8 +12,45 @@
     <generator>Hugo -- 0.147.9</generator>
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
-    <lastBuildDate>Thu, 26 Jun 2025 15:59:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 19:13:55 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>💡 Hugo PaperMod 如何使用 Disqus 啟用 comments 功能</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/</link>
+      <pubDate>Tue, 01 Jul 2025 19:13:55 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/</guid>
+      <description>&lt;h2 id=&#34;註冊-disqus-帳號並建立-site&#34;&gt;註冊 Disqus 帳號並建立 Site&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;至 &lt;a href=&#34;https://disqus.com/&#34;&gt;disqus.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;點右上角 &lt;code&gt;Sign up&lt;/code&gt; 並選擇 &lt;code&gt;Publishers&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;之後建立一個 &lt;a href=&#34;https://disqus.com/admin/create/&#34;&gt;New Site&lt;/a&gt;，類別可隨意&lt;/li&gt;
+&lt;li&gt;平台點選最下面的 &lt;code&gt;I don&#39;t see my platform listed, install manually with Universal Code&lt;/code&gt; 按鈕，安裝步驟可先略過，之後還是可以調整平台跟查看 Installation&lt;/li&gt;
+&lt;li&gt;取得 &lt;code&gt;Shortname&lt;/code&gt;，此值之後會貼到 Hugo 的 &lt;code&gt;config.yml&lt;/code&gt; 裡&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;papermod-啟用-comments-功能&#34;&gt;PaperMod 啟用 comments 功能&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;相關 Feature 設定可參考 PaperMod 的 &lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments&#34;&gt;exampleSite&lt;/a&gt;，和 Hugo &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34;&gt;comments&lt;/a&gt; 文件&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;加入以下設定到 Hugo 的 &lt;code&gt;config.yml&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 啟用 comments 功能&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;comments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 設定 Disqus Shortname&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;disqus&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;shortname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;你剛剛從 Disqus 複製的 Shortname&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;因 Hugo 已附帶 Disqus 的模板，所以可直接將以下內容貼到 &lt;code&gt;layouts/partials/comments.html&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;如目錄跟檔案不存在可自行建立&lt;/li&gt;
+&lt;li&gt;如需要 override Hugo 模板，參考 &lt;a href=&#34;https://gohugo.io/templates/embedded/#disqus&#34;&gt;官方文件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{ partial &amp;#34;disqus.html&amp;#34; . }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>︊️︊︎️️️☄️ Hello World</title>
       <link>https://wcya.github.io/hugo-papermod-blog/posts/hello-world/</link>

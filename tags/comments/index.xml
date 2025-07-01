@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on WCYa&#39;s Blog</title>
-    <link>https://wcya.github.io/hugo-papermod-blog/posts/</link>
-    <description>Recent content in Posts on WCYa&#39;s Blog</description>
+    <title>Comments on WCYa&#39;s Blog</title>
+    <link>https://wcya.github.io/hugo-papermod-blog/tags/comments/</link>
+    <description>Recent content in Comments on WCYa&#39;s Blog</description>
     <image>
       <title>WCYa&#39;s Blog</title>
       <url>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</url>
@@ -13,7 +13,7 @@
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
     <lastBuildDate>Tue, 01 Jul 2025 19:13:55 +0800</lastBuildDate>
-    <atom:link href="https://wcya.github.io/hugo-papermod-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wcya.github.io/hugo-papermod-blog/tags/comments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💡 Hugo PaperMod 如何使用 Disqus 啟用 comments 功能</title>
       <link>https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/</link>
@@ -50,13 +50,6 @@
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{ partial &amp;#34;disqus.html&amp;#34; . }}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>︊️︊︎️️️☄️ Hello World</title>
-      <link>https://wcya.github.io/hugo-papermod-blog/posts/hello-world/</link>
-      <pubDate>Thu, 26 Jun 2025 15:59:10 +0800</pubDate>
-      <guid>https://wcya.github.io/hugo-papermod-blog/posts/hello-world/</guid>
-      <description>&lt;p&gt;這是我的第一篇 Hugo + PaperMod 的文章 🎉&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
