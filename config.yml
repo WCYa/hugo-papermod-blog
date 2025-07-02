@@ -32,13 +32,13 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
+        - name: 文章列表
           url: archives
           weight: 5
-        - name: Search
+        - name: 搜尋
           url: search/
           weight: 10
-        - name: Tags
+        - name: 標籤
           url: tags/
           weight: 10
         - name: GitHub
@@ -61,8 +61,8 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+        - name: GitHub
+          url: https://github.com/WCYa/hugo-papermod-blog/
     params:
       languageAltTitle: English
       profileMode:
