@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>WCYa&#39;s Blog</title>
-    <link>https://wcya.github.io/hugo-papermod-blog/en/</link>
-    <description>Recent content on WCYa&#39;s Blog</description>
+    <title>Posts on WCYa&#39;s Blog</title>
+    <link>https://wcya.github.io/hugo-papermod-blog/en/posts/</link>
+    <description>Recent content in Posts on WCYa&#39;s Blog</description>
     <image>
       <title>WCYa&#39;s Blog</title>
       <url>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</url>
@@ -13,7 +13,7 @@
     <language>en</language>
     <copyright>2025 Wayne Yang</copyright>
     <lastBuildDate>Tue, 01 Jul 2025 19:13:55 +0800</lastBuildDate>
-    <atom:link href="https://wcya.github.io/hugo-papermod-blog/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wcya.github.io/hugo-papermod-blog/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💡 How to enable the comments feature using Disqus in Hugo PaperMod</title>
       <link>https://wcya.github.io/hugo-papermod-blog/en/posts/hugo/papermod/comments-disqus/</link>

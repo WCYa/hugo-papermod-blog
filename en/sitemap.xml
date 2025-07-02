@@ -2,31 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/en/categories/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/posts/hugo/papermod/comments-disqus/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
-                href="https://wcya.github.io/hugo-papermod-blog/categories/"
+                href="https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wcya.github.io/hugo-papermod-blog/en/categories/"
+                href="https://wcya.github.io/hugo-papermod-blog/en/posts/hugo/papermod/comments-disqus/"
                 />
   </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/en/series/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/tags/comments/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
-                href="https://wcya.github.io/hugo-papermod-blog/series/"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/comments/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wcya.github.io/hugo-papermod-blog/en/series/"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/comments/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/tags/disqus/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/disqus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/disqus/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/tags/hugo/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/tags/papermod/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/papermod/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/papermod/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/posts/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/posts/"
                 />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/en/tags/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
@@ -39,6 +94,7 @@
                 />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/en/</loc>
+    <lastmod>2025-07-01T19:13:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-Hant-TW"
@@ -48,6 +104,54 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://wcya.github.io/hugo-papermod-blog/en/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/archives/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/categories/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/search/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/en/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/series/"
                 />
   </url>
 </urlset>

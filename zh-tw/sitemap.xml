@@ -4,21 +4,81 @@
   <url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/posts/hugo/papermod/comments-disqus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/comments/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/comments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/comments/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/disqus/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/disqus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/disqus/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/hugo/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/hugo/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/papermod/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/papermod/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/papermod/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/posts/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
@@ -53,6 +113,16 @@
     <lastmod>2025-06-26T15:59:10+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/archives/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/categories/</loc>
     <xhtml:link
@@ -66,8 +136,6 @@
                 href="https://wcya.github.io/hugo-papermod-blog/categories/"
                 />
   </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/search/</loc>
-  </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -78,6 +146,18 @@
                 rel="alternate"
                 hreflang="zh-Hant-TW"
                 href="https://wcya.github.io/hugo-papermod-blog/series/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/search/"
                 />
   </url>
 </urlset>

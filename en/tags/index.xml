@@ -12,6 +12,35 @@
     <generator>Hugo -- 0.147.9</generator>
     <language>en</language>
     <copyright>2025 Wayne Yang</copyright>
+    <lastBuildDate>Tue, 01 Jul 2025 19:13:55 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comments</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/en/tags/comments/</link>
+      <pubDate>Tue, 01 Jul 2025 19:13:55 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/en/tags/comments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disqus</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/en/tags/disqus/</link>
+      <pubDate>Tue, 01 Jul 2025 19:13:55 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/en/tags/disqus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/en/tags/hugo/</link>
+      <pubDate>Tue, 01 Jul 2025 19:13:55 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/en/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Papermod</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/en/tags/papermod/</link>
+      <pubDate>Tue, 01 Jul 2025 19:13:55 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/en/tags/papermod/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
