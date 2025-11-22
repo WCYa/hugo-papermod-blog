@@ -9,7 +9,7 @@
       <url>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</url>
       <link>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.148.0</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
     <lastBuildDate>Tue, 01 Jul 2025 19:13:55 +0800</lastBuildDate>
@@ -29,7 +29,8 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;papermod-啟用-comments-功能&#34;&gt;PaperMod 啟用 comments 功能&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;相關 Feature 設定可參考 PaperMod 的 &lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments&#34;&gt;exampleSite&lt;/a&gt;，和 Hugo &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34;&gt;comments&lt;/a&gt; 文件&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;相關 Feature 設定可參考 PaperMod 的 &lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments&#34;&gt;exampleSite&lt;/a&gt;，和 Hugo &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34;&gt;comments&lt;/a&gt; 文件&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;加入以下設定到 Hugo 的 &lt;code&gt;config.yml&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
