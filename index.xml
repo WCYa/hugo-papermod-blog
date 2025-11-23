@@ -12,8 +12,26 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
-    <lastBuildDate>Sat, 22 Nov 2025 20:34:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Nov 2025 13:39:01 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🌐 Kubernetes 外部存取：MetalLB 裸機安裝與連線測試</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/metallb/</link>
+      <pubDate>Sun, 23 Nov 2025 13:39:01 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/metallb/</guid>
+      <description>&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;
+&lt;p&gt;一般情況下要讓外部使用者使用 Kubernetes 的服務時，需要透過 External Load Balancers 如 Cloud Provider (GCP、AWS、Azure&amp;hellip;)，但在使用 bare metal Kubernetes clusters 時，Kubernetes 沒有提供原生的這種 Network Load Balancers，如果要讓外部使用者能連線到 bare metal cluster 內部的服務時，通常是使用 NodePort 和 ExternalIPs service，但這兩種在生產環境使用都有著缺點。&lt;/p&gt;
+&lt;p&gt;MetalLB 的目的就是與標準網路設備做整合，使用標準的路由協定使在 bare-metal clusters 內的 &lt;code&gt;對外部的服務&lt;/code&gt; 可以正常運作。&lt;/p&gt;
+&lt;p&gt;MetalLB 提供兩種模式：BGP mode 和 Layer 2 mode，BGP mode 才能實現真正的跨多節點均衡負載，但因為我只是測試用途所以採用 Layer 2 mode。&lt;/p&gt;
+&lt;h2 id=&#34;metallb-在做什麼&#34;&gt;MetalLB 在做什麼&lt;/h2&gt;
+&lt;p&gt;MetalLB 會同時作到兩個功能去提供此服務：IP 位址分配、向外部宣告 IP 是存在於這個 cluster。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IP 位址分配：你需要提供 IP Pools 給 MetalLB，其餘的事例如分配、取消分配、追蹤都由 MetalLB 處理。Private/Public 的 IPV4/IPV6 你要獨立提供或是一起提供都可以，取決於你的環境和租用的 IPs&lt;/li&gt;
+&lt;li&gt;向外部宣告 IP：向 cluster 所在的網路宣告，這個 IP 存在我這個 cluster，宣告方式取決於所使用的模式為何：ARP、NDP、or BGP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;關於-layer-2-模式&#34;&gt;關於 Layer 2 模式&lt;/h2&gt;
+&lt;p&gt;在 Layer 2 模式下，是一個節點負責向本地網路宣告某個 Service IP，故所有流到此 Service IP 的流量都先經過這台節點，之後才由 &lt;code&gt;kube-proxy&lt;/code&gt; 去分散流量到此 Service 的所有 Pods。故 Layer 2 模式未實現真正的網路負載平衡，而是實現故障轉移的功能，故障轉移的偵測是使用 &lt;a href=&#34;https://github.com/hashicorp/memberlist&#34;&gt;memberlist&lt;/a&gt; 實現。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>🔐 Kubernetes 中安裝 cert-manager 並產生 Private CA</title>
       <link>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/cert-manager/</link>

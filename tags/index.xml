@@ -12,8 +12,29 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
-    <lastBuildDate>Sat, 22 Nov 2025 20:34:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Nov 2025 13:39:01 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</link>
+      <pubDate>Sun, 23 Nov 2025 13:39:01 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loadbalancer</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/tags/loadbalancer/</link>
+      <pubDate>Sun, 23 Nov 2025 13:39:01 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/tags/loadbalancer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Metallb</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/tags/metallb/</link>
+      <pubDate>Sun, 23 Nov 2025 13:39:01 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/tags/metallb/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ca</title>
       <link>https://wcya.github.io/hugo-papermod-blog/tags/ca/</link>
@@ -26,13 +47,6 @@
       <link>https://wcya.github.io/hugo-papermod-blog/tags/cert-manager/</link>
       <pubDate>Sat, 22 Nov 2025 20:34:08 +0800</pubDate>
       <guid>https://wcya.github.io/hugo-papermod-blog/tags/cert-manager/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</link>
-      <pubDate>Sat, 22 Nov 2025 20:34:08 +0800</pubDate>
-      <guid>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>

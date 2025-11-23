@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/cert-manager/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
-  </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/tags/ca/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
-  </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/tags/cert-manager/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/metallb/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/loadbalancer/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/metallb/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,7 +28,7 @@
                 />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,7 +41,7 @@
                 />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/</loc>
-    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -52,6 +52,15 @@
                 hreflang="zh-Hant-TW"
                 href="https://wcya.github.io/hugo-papermod-blog/"
                 />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/cert-manager/</loc>
+    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/ca/</loc>
+    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/cert-manager/</loc>
+    <lastmod>2025-11-22T20:34:08+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/hugo/papermod/comments-disqus/</loc>
     <lastmod>2025-07-01T19:13:55+08:00</lastmod>
