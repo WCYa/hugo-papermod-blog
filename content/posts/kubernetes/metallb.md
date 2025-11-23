@@ -64,6 +64,12 @@ helm repo add metallb https://metallb.github.io/metallb
 helm install metallb metallb/metallb --namespace metallb-system --create-namespace
 ```
 
+安裝 MetalLB 到 cluster 後，包含以下 components：
+
+- `metallb-system/controller` deployment. 這是一個 cluster-wide 的 Controller，處理 IP Address 的分配。
+- `metallb-system/speaker` daemonset. 這個元件負責依照你選擇的模式去遵循 protocol(s)，讓服務可以被連線。
+- controller 和 speaker 使用的 Service accounts，還有讓這些 components 正常運作的 RBAC 權限。
+
 此時 MetalLB 仍然是閒置狀態，直到設定了對應的 CRs (Custom Resources)。
 
 ### 設定 CRs
