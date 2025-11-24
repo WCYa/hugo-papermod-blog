@@ -12,8 +12,17 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 Wayne Yang</copyright>
-    <lastBuildDate>Tue, 01 Jul 2025 19:13:55 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 13:01:57 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🤖 Slack Bot：Order Bot</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/en/posts/slack/slack-order/</link>
+      <pubDate>Mon, 24 Nov 2025 13:01:57 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/en/posts/slack/slack-order/</guid>
+      <description>&lt;h2 id=&#34;why-i-built-this-side-project&#34;&gt;Why I built this side project&lt;/h2&gt;
+&lt;p&gt;In my previous job, our team often ordered lunch from external vendors, many of which had certain requirements—such as a minimum order amount or a required number of items for delivery. Because of these conditions, the person responsible for lunch orders had to collect everyone&amp;rsquo;s requests before placing the final order.&lt;/p&gt;
+&lt;p&gt;All colleagues submitted their orders through Slack messages, which not only consumed unnecessary time and effort but also occasionally led to errors, such as mismatched item counts.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>💡 How to enable the comments feature using Disqus in Hugo PaperMod</title>
       <link>https://wcya.github.io/hugo-papermod-blog/en/posts/hugo/papermod/comments-disqus/</link>

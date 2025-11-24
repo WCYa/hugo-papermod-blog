@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>App on WCYa&#39;s Blog</title>
+    <link>https://wcya.github.io/hugo-papermod-blog/en/tags/app/</link>
+    <description>Recent content in App on WCYa&#39;s Blog</description>
+    <image>
+      <title>WCYa&#39;s Blog</title>
+      <url>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</url>
+      <link>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 Wayne Yang</copyright>
+    <lastBuildDate>Mon, 24 Nov 2025 13:01:57 +0800</lastBuildDate>
+    <atom:link href="https://wcya.github.io/hugo-papermod-blog/en/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🤖 Slack Bot：Order Bot</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/en/posts/slack/slack-order/</link>
+      <pubDate>Mon, 24 Nov 2025 13:01:57 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/en/posts/slack/slack-order/</guid>
+      <description>&lt;h2 id=&#34;why-i-built-this-side-project&#34;&gt;Why I built this side project&lt;/h2&gt;
+&lt;p&gt;In my previous job, our team often ordered lunch from external vendors, many of which had certain requirements—such as a minimum order amount or a required number of items for delivery. Because of these conditions, the person responsible for lunch orders had to collect everyone&amp;rsquo;s requests before placing the final order.&lt;/p&gt;
+&lt;p&gt;All colleagues submitted their orders through Slack messages, which not only consumed unnecessary time and effort but also occasionally led to errors, such as mismatched item counts.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

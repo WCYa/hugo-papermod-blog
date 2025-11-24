@@ -2,20 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/metallb/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/app/</loc>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/app/"
+                />
   </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
-  </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/tags/loadbalancer/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
-  </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/tags/metallb/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/bot/</loc>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/bot/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/bot/"
+                />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,8 +41,21 @@
                 href="https://wcya.github.io/hugo-papermod-blog/posts/"
                 />
   </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/slack/</loc>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/tags/slack/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/tags/slack/"
+                />
+  </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,7 +68,7 @@
                 />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/</loc>
-    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -52,6 +79,31 @@
                 hreflang="zh-Hant-TW"
                 href="https://wcya.github.io/hugo-papermod-blog/"
                 />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/slack/slack-order/</loc>
+    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wcya.github.io/hugo-papermod-blog/en/posts/slack/slack-order/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hant-TW"
+                href="https://wcya.github.io/hugo-papermod-blog/posts/slack/slack-order/"
+                />
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/metallb/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/loadbalancer/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/metallb/</loc>
+    <lastmod>2025-11-23T13:39:01+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/kubernetes/cert-manager/</loc>
     <lastmod>2025-11-22T20:34:08+08:00</lastmod>
