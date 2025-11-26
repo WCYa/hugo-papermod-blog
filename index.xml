@@ -12,8 +12,31 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
-    <lastBuildDate>Mon, 24 Nov 2025 13:01:57 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Nov 2025 20:37:29 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🤵 Jenkins：安裝 Jenkins 在 Kubernetes</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/</link>
+      <pubDate>Tue, 25 Nov 2025 20:37:29 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/</guid>
+      <description>&lt;h2 id=&#34;事前準備&#34;&gt;事前準備&lt;/h2&gt;
+&lt;h3 id=&#34;設定-helm-repository&#34;&gt;設定 Helm Repository&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helm repo add jenkinsci https://charts.jenkins.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helm repo update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 可以使用以下指令查詢 Jenkins repo 存在的 charts&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helm search repo jenkinsci
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;建立-namespace&#34;&gt;建立 Namespace&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl create namespace jenkins
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;建立持久性儲存-pv&#34;&gt;建立持久性儲存 PV&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;如果測試環境是使用 minikube，可直接參考 &lt;a href=&#34;https://www.jenkins.io/doc/book/installing/kubernetes/#create-a-persistent-volume&#34;&gt;官網範例&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;建立 Local StorageClass，但需要能接收當節點不可被調度(如 CPU 使用率滿載)造成服務中斷跟資料遺失等等風險&lt;/li&gt;
+&lt;li&gt;使用 Dynamic provisioner (例如：Rook)，則不用手動建立 PV&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;這邊使用 Local StorageClass 為例，這種方式有個好處，因為設定 &lt;code&gt;WaitForFirstConsumer&lt;/code&gt; 時，可以延遲 Volume Binding 讓 scheduler 可以考慮所有 constrains，因此當 Local PV 建立好後，之後建立的 Pod 使用 Local StorageClass 時就會自動被調度到 PV 的節點上。&lt;/p&gt;
+&lt;p&gt;需要先決定 Local PV 要建立在哪個節點，這邊選用我的節點 &lt;code&gt;k8s-1&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;首先在節點 &lt;code&gt;k8s-1&lt;/code&gt; 建立 Local PV 需要的目錄&lt;/p&gt;</description>
+    </item>
     <item>
       <title>🤖 Slack 機器人：訂便當機器人</title>
       <link>https://wcya.github.io/hugo-papermod-blog/posts/slack/slack-order/</link>
