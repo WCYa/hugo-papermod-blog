@@ -30,12 +30,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;建立持久性儲存-pv&#34;&gt;建立持久性儲存 PV&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;如果測試環境是使用 minikube，可直接參考 &lt;a href=&#34;https://www.jenkins.io/doc/book/installing/kubernetes/#create-a-persistent-volume&#34;&gt;官網範例&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;建立 Local StorageClass，但需要能接收當節點不可被調度(如 CPU 使用率滿載)造成服務中斷跟資料遺失等等風險&lt;/li&gt;
+&lt;li&gt;建立 Local StorageClass，但需要能接受當節點不可被調度(如 CPU 使用率滿載)造成服務中斷跟資料遺失等等風險&lt;/li&gt;
 &lt;li&gt;使用 Dynamic provisioner (例如：Rook)，則不用手動建立 PV&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;這邊使用 Local StorageClass 為例，這種方式有個好處，因為設定 &lt;code&gt;WaitForFirstConsumer&lt;/code&gt; 時，可以延遲 Volume Binding 讓 scheduler 可以考慮所有 constrains，因此當 Local PV 建立好後，之後建立的 Pod 使用 Local StorageClass 時就會自動被調度到 PV 的節點上。&lt;/p&gt;
-&lt;p&gt;需要先決定 Local PV 要建立在哪個節點，這邊選用我的節點 &lt;code&gt;k8s-1&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;首先在節點 &lt;code&gt;k8s-1&lt;/code&gt; 建立 Local PV 需要的目錄&lt;/p&gt;</description>
+&lt;p&gt;這邊使用 Local StorageClass 為例，這種方式有個好處，因為設定 &lt;code&gt;WaitForFirstConsumer&lt;/code&gt; 時，可以延遲 Volume Binding 讓 scheduler 可以考慮所有 constrains，因此當 Local PV 建立好後，之後建立的 Pod 使用 Local StorageClass 時就會自動被調度到 PV 的節點上，參考官網 &lt;a href=&#34;https://kubernetes.io/docs/concepts/storage/volumes/#local&#34;&gt;Volume local&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;需要先決定 Local PV 要建立在哪個節點，這邊選用我的節點 &lt;code&gt;k8s-1&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
