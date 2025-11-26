@@ -25,10 +25,10 @@ kubectl create namespace jenkins
 ### 建立持久性儲存 PV
 
 1. 如果測試環境是使用 minikube，可直接參考 [官網範例](https://www.jenkins.io/doc/book/installing/kubernetes/#create-a-persistent-volume)
-2. 建立 Local StorageClass，但需要能接收當節點不可被調度(如 CPU 使用率滿載)造成服務中斷跟資料遺失等等風險
+2. 建立 Local StorageClass，但需要能接受當節點不可被調度(如 CPU 使用率滿載)造成服務中斷跟資料遺失等等風險
 3. 使用 Dynamic provisioner (例如：Rook)，則不用手動建立 PV
 
-這邊使用 Local StorageClass 為例，這種方式有個好處，因為設定 `WaitForFirstConsumer` 時，可以延遲 Volume Binding 讓 scheduler 可以考慮所有 constrains，因此當 Local PV 建立好後，之後建立的 Pod 使用 Local StorageClass 時就會自動被調度到 PV 的節點上。
+這邊使用 Local StorageClass 為例，這種方式有個好處，因為設定 `WaitForFirstConsumer` 時，可以延遲 Volume Binding 讓 scheduler 可以考慮所有 constrains，因此當 Local PV 建立好後，之後建立的 Pod 使用 Local StorageClass 時就會自動被調度到 PV 的節點上，參考官網 [Volume local](https://kubernetes.io/docs/concepts/storage/volumes/#local)。
 
 需要先決定 Local PV 要建立在哪個節點，這邊選用我的節點 `k8s-1`。
 
