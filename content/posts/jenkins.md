@@ -282,3 +282,27 @@ sudo dmesg | grep 'KUBE_SOURCE_DROP_POINT'
 # 或者
 sudo journalctl -k | grep 'KUBE_SOURCE_DROP_POINT'
 ```
+
+## 整個 Kubernetes cluster 重啟後 jenkins 無法啟動
+
+我把 Kubernetes lab 整個關掉，隔天再次啟動後發現 jenkins 無法正常啟動，查看 events 顯示 `Back-off restarting failed container init in pod jenkins-0_jenkins`，所以透過指令 `kubectl -n jenkins logs jenkins-0 -c init` 查看 InitContainer init 的訊息，發現最後兩行 logs 如下：
+
+```bash
+copy plugins to shared volume
+cp: overwrite '/var/jenkins_plugins/antisamy-markup-formatter.jpi'? ...
+```
+
+查看 ConfigMap jenkins （`apply_config.sh`）的最後幾行指令如下：
+
+```bash
+echo "copy plugins to shared volume"
+# Copy plugins to shared volume
+yes n | cp -i /usr/share/jenkins/ref/plugins/* /var/jenkins_plugins/;
+echo "finished initialization"
+```
+
+我認為跟 `yes n | cp -i` 那行指令有關，調整成使用 `-n` 參數，然後重啟 Kubernetes cluster 後 jenkins pod 正常啟動
+
+```bash
+cp -n /usr/share/jenkins/ref/plugins/* /var/jenkins_plugins/;
+```
