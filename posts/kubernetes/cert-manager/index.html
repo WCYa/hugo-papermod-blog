@@ -124,26 +124,26 @@ spec:
 <a href=https://github.com/WCYa/hugo-papermod-blog/tree/main/content//posts/kubernetes/cert-manager.md rel="noopener noreferrer edit" target=_blank>Suggest Changes</a></span></div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>目錄</span></summary><div class=inner><ul><li><a href=#%e5%ae%89%e8%a3%9d aria-label=安裝>安裝</a></li><li><a href=#%e7%94%a2%e7%94%9f-private-ca-%e5%b0%8d%e6%87%89%e7%9a%84-custom-resources aria-label="產生 Private CA 對應的 Custom Resources">產生 Private CA 對應的 Custom Resources</a></li></ul></div></details></div><div class=post-content><blockquote><p>⚠️ 僅用於測試用途</p></blockquote><h2 id=安裝>安裝<a hidden class=anchor aria-hidden=true href=#安裝>#</a></h2><p>透過 Helm 安裝 cert-manager，首先下載簽署 cert-manager chart 的 GPG keyring，且在安裝時用此 GPG keyring 來驗證我們從 OCI Registry 下載的 chart</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>curl -LO https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>helm install <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  cert-manager oci://quay.io/jetstack/charts/cert-manager <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  --version v1.19.1 <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  --namespace cert-manager <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  --create-namespace <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  --verify <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  --keyring ./cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span>  --set crds.enabled<span class=o>=</span><span class=nb>true</span>
+</span></span></span><span class=line><span class=cl>  cert-manager oci://quay.io/jetstack/charts/cert-manager <span class=se>\
+</span></span></span><span class=line><span class=cl>  --version v1.19.1 <span class=se>\
+</span></span></span><span class=line><span class=cl>  --namespace cert-manager <span class=se>\
+</span></span></span><span class=line><span class=cl>  --create-namespace <span class=se>\
+</span></span></span><span class=line><span class=cl>  --verify <span class=se>\
+</span></span></span><span class=line><span class=cl>  --keyring ./cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg <span class=se>\
+</span></span></span><span class=line><span class=cl>  --set crds.enabled<span class=o>=</span><span class=nb>true</span>
 </span></span></code></pre></div><h2 id=產生-private-ca-對應的-custom-resources>產生 Private CA 對應的 Custom Resources<a hidden class=anchor aria-hidden=true href=#產生-private-ca-對應的-custom-resources>#</a></h2><p>以下為範例的 manifest 檔案，命名為 <code>root_ca.yaml</code></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>cert-manager.io/v1</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>ClusterIssuer</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>metadata</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>ClusterIssuer</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>metadata</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>selfsigned-issuer</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>spec</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>spec</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>selfSigned</span><span class=p>:</span><span class=w> </span>{}<span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nn>---</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>cert-manager.io/v1</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>Certificate</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>metadata</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nn>---</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>cert-manager.io/v1</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>Certificate</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>metadata</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>my-selfsigned-ca</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>namespace</span><span class=p>:</span><span class=w> </span><span class=l>cert-manager</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>spec</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>spec</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>isCA</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>commonName</span><span class=p>:</span><span class=w> </span><span class=l>my-selfsigned-ca</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>secretName</span><span class=p>:</span><span class=w> </span><span class=l>root-secret</span><span class=w>
@@ -163,12 +163,12 @@ spec:
 </span></span></span><span class=line><span class=cl><span class=w>    </span>- <span class=l>Internal PKI</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>localities</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span>- <span class=l>Taipei</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nn>---</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>cert-manager.io/v1</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>ClusterIssuer</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>metadata</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nn>---</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>cert-manager.io/v1</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>ClusterIssuer</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>metadata</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>my-ca-issuer</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>spec</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>spec</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>ca</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c># `ClusterIssuer` resource is not namespaced, so `secretName` is assumed to reference secret in `cert-manager` namespace.</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>secretName</span><span class=p>:</span><span class=w> </span><span class=l>root-secret</span><span class=w>

@@ -28,19 +28,6 @@
                 href="https://wcya.github.io/hugo-papermod-blog/en/tags/bot/"
                 />
   </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/en/posts/</loc>
-    <lastmod>2025-11-24T13:01:57+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-Hant-TW"
-                href="https://wcya.github.io/hugo-papermod-blog/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wcya.github.io/hugo-papermod-blog/en/posts/"
-                />
-  </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/en/tags/slack/</loc>
     <lastmod>2025-11-24T13:01:57+08:00</lastmod>
     <xhtml:link

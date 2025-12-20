@@ -9,16 +9,29 @@
       <url>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</url>
       <link>https://wcya.github.io/hugo-papermod-blog/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.153.0</generator>
     <language>zh-Hant-TW</language>
     <copyright>2025 Wayne Yang</copyright>
-    <lastBuildDate>Tue, 25 Nov 2025 20:37:29 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 11:57:22 +0800</lastBuildDate>
     <atom:link href="https://wcya.github.io/hugo-papermod-blog/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>🤵 Jenkins：建立 GitHub Branch Source 的 Multibranch Pipleline</title>
+      <link>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/multibranch-pipleline/</link>
+      <pubDate>Sat, 20 Dec 2025 11:57:22 +0800</pubDate>
+      <guid>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/multibranch-pipleline/</guid>
+      <description>&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;
+&lt;p&gt;在上一篇『&lt;a href=&#34;https://wcya.github.io/hugo-papermod-blog/posts/jenkins/install&#34;&gt;Jenkins：安裝 Jenkins 在 Kubernetes&lt;/a&gt;』將 Jenkins 安裝在 Kubernetes 後，現在來試試看搭配 GitHub 去使用 &lt;a href=&#34;https://www.jenkins.io/doc/book/using/best-practices/#use-multibranch-pipelines&#34;&gt;Multibranch Pipelines&lt;/a&gt; 自動化管理 Pipeline Jobs。&lt;/p&gt;
+&lt;h2 id=&#34;dynamic-agents&#34;&gt;Dynamic Agents&lt;/h2&gt;
+&lt;p&gt;透過 Helm Chart 安裝 Jenkins 時，預設會安裝 &lt;a href=&#34;https://plugins.jenkins.io/kubernetes/&#34;&gt;Kubernetes Plugin&lt;/a&gt;，可以在 Kubernetes Cluster 內動態的為 Jenkins agents 建立 Pod 而不用手動去建立 static agents。&lt;/p&gt;
+&lt;h2 id=&#34;事前準備&#34;&gt;事前準備&lt;/h2&gt;
+&lt;p&gt;架構連線的方式為 GitHub App 在發生 events 時會送請求到 Jenkins Webhook，由於我的 Kubernetes Cluster 是在我的 Lab 環境，且沒有固定的外部 IP Addresses 或 Domain Names，這邊我使用 &lt;a href=&#34;https://hookdeck.com/&#34;&gt;Hookdeck&lt;/a&gt; 的 CLI 工具將來自 GitHub App 的 events 轉送往我 Kubernetes Lab 環境為 Jenkins 建立的 External IP。&lt;/p&gt;
+&lt;p&gt;在申請完 Hookdeck 帳號後，網站會引導你建立第一個 Connection，需要填的資訊約如下：&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>🤵 Jenkins：安裝 Jenkins 在 Kubernetes</title>
-      <link>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/</link>
+      <link>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/install/</link>
       <pubDate>Tue, 25 Nov 2025 20:37:29 +0800</pubDate>
-      <guid>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/</guid>
+      <guid>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/install/</guid>
       <description>&lt;h2 id=&#34;事前準備&#34;&gt;事前準備&lt;/h2&gt;
 &lt;h3 id=&#34;設定-helm-repository&#34;&gt;設定 Helm Repository&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helm repo add jenkinsci https://charts.jenkins.io

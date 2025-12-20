@@ -3,29 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/cicd/</loc>
-    <lastmod>2025-11-25T20:37:29+08:00</lastmod>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/github/</loc>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/github-app/</loc>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/jenkins/</loc>
-    <lastmod>2025-11-25T20:37:29+08:00</lastmod>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/kubernetes/</loc>
-    <lastmod>2025-11-25T20:37:29+08:00</lastmod>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/tags/multibranch-pipeline/</loc>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/posts/</loc>
-    <lastmod>2025-11-25T20:37:29+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wcya.github.io/hugo-papermod-blog/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-Hant-TW"
-                href="https://wcya.github.io/hugo-papermod-blog/posts/"
-                />
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/</loc>
-    <lastmod>2025-11-25T20:37:29+08:00</lastmod>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,7 +37,7 @@
                 />
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/</loc>
-    <lastmod>2025-11-25T20:37:29+08:00</lastmod>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,7 +49,10 @@
                 href="https://wcya.github.io/hugo-papermod-blog/"
                 />
   </url><url>
-    <loc>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/</loc>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/multibranch-pipleline/</loc>
+    <lastmod>2025-12-20T11:57:22+08:00</lastmod>
+  </url><url>
+    <loc>https://wcya.github.io/hugo-papermod-blog/posts/jenkins/install/</loc>
     <lastmod>2025-11-25T20:37:29+08:00</lastmod>
   </url><url>
     <loc>https://wcya.github.io/hugo-papermod-blog/tags/app/</loc>
